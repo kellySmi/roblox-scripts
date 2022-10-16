@@ -16,16 +16,17 @@ function MessageService.displayMessage(messageText,playerGui,labelOpts,waitTime)
 	if messageText then
 		messLabel.Text = messageText
 	else
-		messLabel.Text = "A place holder"
+		messLabel.Text = "No message Text" -- no messageText
 	end
 	
 	messFrame.Visible = true
 	if(waitTime) then
 		wait(waitTime)
 	else
-		wait(5) -- default time to wait 10 secs
+		wait(5) -- default time to wait 5 secs
 	end
-	messFrame.Visible = false
+	-- hide and remove any text
+	messFrame.Visible = false 
 	messLabel.Text = ""
 end
 return MessageService
