@@ -1,5 +1,4 @@
 local MessageService = {}
--- local playerGUi = game:WaitForChild("StarterGui")
 
 function MessageService.displayMessage(messageText,playerGui,labelOpts,waitTime)
 	local messageSGUi = playerGui:WaitForChild("MessageModal")
